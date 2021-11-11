@@ -15,6 +15,6 @@ class Ping(BaseCommand):
     async def handle(self, params, message, client):
 
         embed = discord.Embed(title="Pong 🏓")
-        
+        embed.set_timestamp()
 
         await message.channel.send(embed)
